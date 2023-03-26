@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import images from '../assets/images';
 
 const Project = ({ project }) => {
@@ -22,12 +22,12 @@ const Project = ({ project }) => {
       <div className="project-content">
         <h3>{name}</h3>
         <p>{description}</p>
-        <Link to={link} target="_blank" rel="noreferrer">
+        <a href={link} target="_blank" rel="noreferrer">
           View Project
-        </Link>
-        <Link to={repo} target="_blank" rel="noreferrer">
+        </a>
+        <a href={repo} target="_blank" rel="noreferrer">
           View Repository
-        </Link>
+        </a>
       </div>
     </div>
   );

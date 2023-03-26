@@ -20,7 +20,7 @@ const Navigation = (props) => {
                 key={Page.name}
             >
                 <span
-                    onClick={() => setCurrentPage(Page)}
+                    onClick={() => setCurrentPage(Page.name)}
                 >
                     {Page.name}
                 </span>

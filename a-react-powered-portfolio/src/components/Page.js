@@ -1,15 +1,14 @@
 import React from 'react'
-import PageContent from './PageContent'
+// import PageContent from './PageContent'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Resume from './Resume'
 
 const Page = ({currentPage}) => {
-  const {name} = currentPage;
 
-  const renderPage = () => {
-    switch (name) {
+  const renderPage = (currentPage) => {
+    switch (currentPage) {
       case 'About Me':
         return <About />;
       case 'Portfolio':
@@ -25,10 +24,8 @@ const Page = ({currentPage}) => {
   
   return (
     <section>
-      <h2>{name}</h2>
-      <PageContent>
-        {renderPage()}
-      </PageContent>
+      <h2>{currentPage}</h2>
+        {renderPage(currentPage)}
     </section>
   )
 }

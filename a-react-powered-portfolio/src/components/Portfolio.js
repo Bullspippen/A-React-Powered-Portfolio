@@ -38,6 +38,7 @@ const Portfolio = () => {
     // Render the Portfolio page and its content using the projects array
   return (
     <div className="flex-row">
+        <h2>Portfolio Test</h2>
       {projects.map((project, i) => (
         <Project project={project} key={'project' + i} />
       ))}

@@ -1,30 +1,22 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Page from './components/Page';
 import Footer from './components/Footer';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './components/Routes';
 
 function App() {
   const [pages] = useState([
-    { name: 'About Me', component: <About /> },
-    { name: 'Portfolio', component: <Portfolio /> },
-    { name: 'Contact', component: <Contact /> },
-    { name: 'Resume', component: <Resume /> },
+    { name: 'About Me', },
+    { name: 'Portfolio', },
+    { name: 'Contact', },
+    { name: 'Resume', },
   ]);
 
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState(pages[0].name);
 
   return (
     <div>
-      <Header>
         <Navigation pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
-      </Header>
       <main>
         <Page currentPage={currentPage} />
       </main>
