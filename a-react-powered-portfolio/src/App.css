@@ -60,13 +60,46 @@
     justify-self: center;
     align-self: center;
   }
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* styles for contact form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #61dafb;
+  }
+
+  .contact-form button {
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #2d91c6;
   }
 }
