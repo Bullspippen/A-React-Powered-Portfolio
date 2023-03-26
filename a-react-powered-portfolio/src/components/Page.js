@@ -6,7 +6,7 @@ import Resume from './Resume';
 
 const Page = ({ currentPage }) => {
   const renderPage = (currentPage) => {
-    switch (currentPage) {
+    switch (currentPage.name) {
       case 'About Me':
         return <About />;
       case 'Portfolio':
@@ -21,11 +21,11 @@ const Page = ({ currentPage }) => {
   };
   
   return (
-    <section>
-      <h2>{currentPage}</h2>
-        {renderPage(currentPage)}
+    <section className="container mx-auto my-10 px-5">
+      <h2 className="text-3xl font-bold mb-5">{currentPage.name}</h2>
+      {renderPage(currentPage)}
     </section>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

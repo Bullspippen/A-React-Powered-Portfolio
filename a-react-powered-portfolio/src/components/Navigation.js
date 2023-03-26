@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
-// Destructure the props object into its properties and assign them to variables
-const Navigation = ({ pages = [], setCurrentPage, currentPage }) => {
-  // Use the useEffect() Hook to update the document title
-  useEffect(() => {
-    document.title = `${currentPage.name} | My Portfolio`;
-  }, [currentPage]);
+function Navigation(props) {
+  const {
+    pages = [],
+    setCurrentPage,
+    currentPage,
+  } = props;
 
   return (
     <nav>
