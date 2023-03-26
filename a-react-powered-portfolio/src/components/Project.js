@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import images from '../assets/images';
 
 const Project = ({ project }) => {
   if (!project) {
@@ -16,16 +18,16 @@ const Project = ({ project }) => {
 
   return (
     <div className="project" key={name}>
-      <img src={require(`../assets/images/${image}`).default} alt={name} className="project-bg" />
+      <img src={images[image]} alt={name} className="project-bg" />
       <div className="project-content">
         <h3>{name}</h3>
         <p>{description}</p>
-        <a href={link} target="_blank" rel="noreferrer">
+        <Link to={link} target="_blank" rel="noreferrer">
           View Project
-        </a>
-        <a href={repo} target="_blank" rel="noreferrer">
+        </Link>
+        <Link to={repo} target="_blank" rel="noreferrer">
           View Repository
-        </a>
+        </Link>
       </div>
     </div>
   );
