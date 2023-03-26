@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Project from './Project';
 
+// This component renders the Portfolio page and its content
 const Portfolio = () => {
+    // Create a state variable for the projects array and assign it an initial value of an array of objects
   const [projects] = useState([
     {
       name: 'Project One',
@@ -33,6 +35,7 @@ const Portfolio = () => {
     },
   ]);
 
+    // Render the Portfolio page and its content using the projects array
   return (
     <div className="flex-row">
       {projects.map((project, i) => (
