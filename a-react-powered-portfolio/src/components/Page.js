@@ -1,10 +1,10 @@
 import React from 'react'
-// import PageContent from './PageContent'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Resume from './Resume'
 
+// This component renders the current page and its content using the About, Portfolio, Contact, and Resume components
 const Page = ({currentPage}) => {
 
   const renderPage = (currentPage) => {
@@ -22,6 +22,7 @@ const Page = ({currentPage}) => {
     }
   };
   
+  // Render the current page and its content using the renderPage function and the currentPage variable
   return (
     <section>
       <h2>{currentPage}</h2>

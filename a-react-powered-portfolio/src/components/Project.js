@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
 import images from '../assets/images';
 
+// This component renders a project and its content using the project object passed to it as a prop
 const Project = ({ project }) => {
   if (!project) {
     return <div>Project object not found.</div>;
