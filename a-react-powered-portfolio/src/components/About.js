@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import profilePic from '../assets/profile-pic.jpg';
+// import profilePic from '../assets/profile-pic.jpg';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <Image src={profilePic} alt="Profile Picture" roundedCircle fluid />
+            {/* <Image src={profilePic} alt="Profile Picture" roundedCircle fluid /> */}
           </Col>
           <Col md={8}>
             <h2>About Me</h2>
