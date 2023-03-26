@@ -24,11 +24,19 @@ const Page = ({currentPage}) => {
   
   // Render the current page and its content using the renderPage function and the currentPage variable
   return (
-    <section>
+    <section
+      style={{
+        border: '1px solid #ddd',
+        padding: '20px',
+        borderRadius: '5px',
+        boxShadow: '0 0 10px #ddd',
+        marginBottom: '20px',
+      }}
+    >
       <h2>{currentPage}</h2>
-        {renderPage(currentPage)}
+      {renderPage(currentPage)}
     </section>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
