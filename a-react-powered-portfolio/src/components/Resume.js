@@ -1,48 +1,71 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Resume = () => {
-  const [resume] = useState([]);
+  const resume = [
+    {
+      id: 1,
+      type: 'work',
+      title: 'Job 1',
+      employer: 'Employer 1',
+      date: 'MM YYYY - Present',
+      bullets: [
+        'Developed and maintained web applications using React and Node.js',
+        'Collaborated with a team of designers and developers to create engaging user experiences',
+        'Implemented automated testing using Jest and Enzyme',
+      ],
+    },
+    {
+      id: 2,
+      type: 'education',
+      title: 'School',
+      institution: 'University of ABC',
+      date: 'Graduated MM YYYY',
+      bullets: [],
+    },
+    {
+      id: 3,
+      type: 'skills',
+      title: 'Skills',
+      bullets: ['React', 'Node.js', 'JavaScript', 'HTML', 'CSS'],
+    },
+  ];
 
   return (
-    <div>
-      {resume.map((item) => (
-        <p key={item.id}>{item.title}</p>
+    <section>
+      <h2>Work Experience</h2>
+      {resume.filter((item) => item.type === 'work').map((item) => (
+        <div key={item.id}>
+          <h3>{item.title}</h3>
+          <p>{item.employer}</p>
+          <ul>
+            {item.bullets.map((bullet, i) => (
+              <li key={i}>{bullet}</li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </div>
+
+      <h2>Education</h2>
+      {resume.filter((item) => item.type === 'education').map((item) => (
+        <div key={item.id}>
+          <h3>{item.title}</h3>
+          <p>{item.institution}</p>
+          <p>{item.date}</p>
+        </div>
+      ))}
+
+      <h2>Skills</h2>
+      {resume.filter((item) => item.type === 'skills').map((item) => (
+        <div key={item.id}>
+          <ul>
+            {item.bullets.map((bullet, i) => (
+              <li key={i}>{bullet}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
   );
 };
 
 export default Resume;
-
-// return (
-//   <section>
-//     <h2>Work Experience</h2>
-//     <div>
-//       <h3>Job 1</h3>
-//       <p>Timelinet</p>
-//       <ul>
-//         <li>Developed and maintained web applications using React and Node.js</li>
-//         <li>Collaborated with a team of designers and developers to create engaging user experiences</li>
-//         <li>Implemented automated testing using Jest and Enzyme</li>
-//       </ul>
-//     </div>
-
-//     <h2>Education</h2>
-//     <div>
-//       <h3>Schoool</h3>
-//       <p>University of ABC</p>
-//       <p>Graduated May 2019</p>
-//     </div>
-
-//     <h2>Skills</h2>
-//     <div>
-//       <ul>
-//         <li>React</li>
-//         <li>Node.js</li>
-//         <li>JavaScript</li>
-//         <li>HTML</li>
-//         <li>CSS</li>
-//       </ul>
-//     </div>
-//   </section>
-// );
