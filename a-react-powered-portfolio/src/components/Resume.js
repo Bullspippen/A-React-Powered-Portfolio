@@ -1,6 +1,8 @@
 import React from 'react';
 
+// This component renders the resume content and its content using the Resume component
 const Resume = () => {
+  // Create a resume array and assign it an initial value of an array of objects containing the resume content and its content
   const resume = [
     {
       id: 1,
@@ -30,6 +32,7 @@ const Resume = () => {
     },
   ];
 
+  // Render the resume content and its content using the resume array and the map() method to iterate over the array
   return (
     <section>
       <h2>Work Experience</h2>
