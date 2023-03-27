@@ -19,12 +19,13 @@ function Navigation(props) {
             }`}
             key={page.name}
           >
-            <span
-              // When the list item is clicked, update the current page
+            <a
+              href={`#${page.name}`}
+              style={{ color: 'black' }} // Set the color of the link to black
               onClick={() => setCurrentPage(page)}
             >
               {page.name}
-            </span>
+            </a>
           </li>
         ))}
       </ul>

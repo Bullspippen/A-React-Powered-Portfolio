@@ -20,7 +20,7 @@ function App() {
       <Container fluid className="justify-content-between d-flex bg-success col-12">
       <Row className="flex-row">
       <header className="banner">
-        <h1>My Portfolio</h1>
+        <h1>My Portfolio</h1> 
         <Navigation className="ml-auto"
         pages={pages}
         setCurrentPage={setCurrentPage}
