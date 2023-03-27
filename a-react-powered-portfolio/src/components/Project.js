@@ -11,11 +11,6 @@ const Project = ({ project }) => {
   // Destructure the project object into its properties and assign them to variables
   const { name, description, link, repo, image } = project;
 
-  // If any of the required properties are missing, return an error message
-  if (!name || !description || !link || !repo || !image) {
-    return <div>Project object is missing required properties.</div>;
-  }
-
   return (
     <div className="project" key={name}>
       <img src={images[image]} alt={name} className="project-bg" />
