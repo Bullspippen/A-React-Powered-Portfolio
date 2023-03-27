@@ -15,9 +15,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <Container fluid className="bg-warning vh-100">
+    <Container fluid className="bg-light vh-100">
     <div>
-      <Container fluid className="justify-content-between d-flex bg-success col-12">
+      <Container fluid className="justify-content-between d-flex bg-secondary col-12">
       <Row className="flex-row">
       <header className="banner">
         <h1>My Portfolio</h1> 
