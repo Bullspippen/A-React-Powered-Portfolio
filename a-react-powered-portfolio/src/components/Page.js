@@ -25,7 +25,6 @@ const Page = ({ currentPage }) => {
   // Render the current page based on the name property of the currentPage object
   return (
     <section className="container mx-auto my-10 px-5">
-      <h2 className="text-3xl font-bold mb-5">{currentPage.name}</h2>
       {renderPage(currentPage)}
     </section>
   );

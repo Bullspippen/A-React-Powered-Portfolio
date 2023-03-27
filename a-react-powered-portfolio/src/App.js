@@ -9,6 +9,7 @@ function App() {
     { name: 'Portfolio' },
     { name: 'Project' },
     { name: 'Resume' },
+    { name: 'Contact' },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
@@ -32,3 +33,4 @@ function App() {
 }
 
 export default App;
+

@@ -10,7 +10,7 @@ function Navigation(props) {
   return (
     <nav>
       {/* Map over the pages array and render a list item for each page */}
-      <ul className="flex-row">
+      <ul className="flex-row navlink">
         {pages.map((page) => (
           <li
             className={`mx-5 ${
