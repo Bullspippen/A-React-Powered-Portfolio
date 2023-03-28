@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [projects] = useState([
     {
       name: 'My Career(r) Life Cycle Management System',
-      description: 'A personal development plan platform that helps individuals manage their career goals and stay up-to-date with the latest industry trends and technologies.',
+      description: 'A Personal Development Plan Platform that helps individuals manage their career goals and stay up-to-date with the latest industry trends and technologies.',
       link: 'https://my-career.herokuapp.com/login',
       repo: 'https://github.com/Bullspippen/my-career',
       image: '<img src="https://practicebusiness.co.uk/wp-content/uploads/2022/11/iStock-1399506394-678x381.jpg">',
@@ -21,14 +21,14 @@ const Portfolio = () => {
   },
     {
       name: 'Progressive Web Applications [PWA] - Text-Editor',
-      description: 'A versatile Progressive Web Application for creating notes and code snippets that can be used offline and has data persistence techniques.',
+      description: 'A Versatile Progressive Web Application for creating notes and code snippets that can be used offline and has data persistence techniques.',
       link: 'https://evening-wave-94628.herokuapp.com/',
       repo: 'https://github.com/Bullspippen/Progressive-Web-Applications-PWA-Text-Editor',
       image: '<img src="https://www.volumetree.com/wp-content/uploads/2020/01/Progressive-Web-Apps.png">',
     },
     {
       name: 'SQL Employee Tracker',
-      description: 'A command-line application that helps business owners manage their company by viewing and managing the departments, roles, and employees in their company.',
+      description: 'A Command-line Application that helps business owners manage their company by viewing and managing the departments, roles, and employees in their company.',
       link: 'https://drive.google.com/file/d/1xjvX8oLKo-1-ksgdbmJZyfviV3EZbBJ-/view',
       repo: 'https://github.com/Bullspippen/SQL-Employee-Tracker',
       image: '<img src="https://www.softactivity.com/wp-content/uploads/tracking-employee-computer-activity-1600.jpg">',
