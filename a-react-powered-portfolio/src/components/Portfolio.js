@@ -17,7 +17,7 @@ const Portfolio = () => {
       description: 'An NBA Stats, Recent & Future Games and Ticket Purchasing Appication',
       link: 'https://bullspippen.github.io/We-The-North/',
       repo: 'https://github.com/Bullspippen/We-The-North',
-      image: 'https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/fvv_s4vuakyp6aruzw63pq5t59ie.png?itok=DZxVKvBs" alt="eLearningIndustry" style="width:250px;height:250px;',
+      image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1ce7b137694691.575621a082197.png',
   },
     {
       name: 'Progressive Web Applications [PWA] - Text-Editor',
@@ -31,7 +31,7 @@ const Portfolio = () => {
       description: 'A Command-line Application that helps business owners manage their company by viewing and managing the departments, roles, and employees in their company.',
       link: 'https://drive.google.com/file/d/1xjvX8oLKo-1-ksgdbmJZyfviV3EZbBJ-/view',
       repo: 'https://github.com/Bullspippen/SQL-Employee-Tracker',
-      image: 'https://www.softactivity.com/wp-content/uploads/tracking-employee-computer-activity-1600.jpg',
+      image: 'https://img.etimg.com/thumb/msid-75750679,width-650,height-488,imgsize-505880,,resizemode-75/technology-getty.jpg',
     },
   ]);
 
