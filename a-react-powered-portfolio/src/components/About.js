@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-// import profilePic from '../assets/profile-pic.jpg';
+import profilePic from '../assets/images';
 
 const About = () => {
   return (
     <section className="my-4">
       <Container>
         <Row>
-          {/* <Col md={4}> */}
-          {/* <Image src={profilePic} alt="Profile Picture" roundedCircle fluid /> */}
-          {/* </Col> */}
+          <Col md={4}>
+          <Image src={profilePic} alt="Profile Picture" roundedCircle fluid />
+          </Col>
           <Col md={12}>
             <h2>About Me</h2>
             <p>

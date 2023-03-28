@@ -25,7 +25,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/mohamed-osman"
+                href="https://github.com/Bullspippen"
                 className=""
               >
                 <FaGithub />
