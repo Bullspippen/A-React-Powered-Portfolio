@@ -14,7 +14,7 @@ const Portfolio = () => {
     },
     {
       name: 'We the North',
-      description: 'An NBA Stats, Recent & Future Games and Ticket Purchasing App',
+      description: 'An NBA Stats, Recent & Future Games and Ticket Purchasing Appication',
       link: 'https://bullspippen.github.io/We-The-North/',
       repo: 'https://github.com/Bullspippen/We-The-North',
       image: '<img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/fvv_s4vuakyp6aruzw63pq5t59ie.png?itok=DZxVKvBs" alt="eLearningIndustry" style="width:250px;height:250px;">',
