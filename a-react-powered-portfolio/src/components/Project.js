@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import images from '../assets/images';
+import React from "react";
+import PropTypes from "prop-types";
+import images from "../assets/images";
 
 // This component renders a project and its content using the project object passed to it as a prop
 const Project = ({ project }) => {
@@ -13,13 +13,13 @@ const Project = ({ project }) => {
 
   return (
     <div className="project" key={name}>
-      <img src={images[image]} alt={name} className="project-bg" />
+      <img src={image} alt={name} className="project-bg" />
       <div className="project-content">
         <h3>{name}</h3>
         <p>{description}</p>
         <a href={link} target="_blank" rel="noreferrer">
           View Project
-        </a>
+        </a>   
         <a href={repo} target="_blank" rel="noreferrer">
           View Repository
         </a>
