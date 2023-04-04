@@ -6,6 +6,13 @@ const Portfolio = () => {
    // Create a state variable for the projects array and assign it an initial value of an array of objects
   const [projects] = useState([
     {
+      name: 'Puppeteers Bazaar',
+      description: 'Puppeteers Bazaar is an online shopping application that allows users to purchase household items from Amazon, Loblaws, and Walmart.',
+      link: 'https://puppeteers-bazaar.herokuapp.com/',
+      repo: 'https://github.com/Bullspippen/Puppeteer-s-Bazaar',
+      image: 'https://www.cenfa.org/wp-content/uploads/2021/08/mbiz-ecommerce-eprocurement-government-business-b2b-series-a-indonesia-investment-funding.jpg',
+    },
+    {
       name: 'My Career(r) Life Cycle Management System',
       description: 'A Personal Development Plan Platform that helps individuals manage their career goals and stay up-to-date with the latest industry trends and technologies.',
       link: 'https://my-career.herokuapp.com/login',
